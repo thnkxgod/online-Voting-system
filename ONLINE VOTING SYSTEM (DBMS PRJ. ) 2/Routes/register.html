@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Registration Form </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/stylesheet.css"> 
+</head>
+
+<body>
+    <style>
+        body{
+            background-image: url('../Image/images\ \(15\).jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    </style>
+    <center><h1>ONLINE VOTING SYSTEM</h1></center> 
+    <hr>
+     
+    <center>
+        <!-- form section --> 
+
+        <h3>Registration</h3>
+        <form action="../API/register.php" method="post" enctype="multipart/form-data">                                          <!-- GET method -> shows data on URL & POST method -> not show data on URL.-->
+            <input type="text" name="name" placeholder="Enter Your Name">
+            <input type="number" name="mobile" placeholder="mobile number"><br><br>
+            <input type="password" name="password" placeholder="password">
+            <input type="password" name="cpassword" placeholder="Confirm password"><br><br>
+            <input id="address" type="text" name="address" placeholder="Enter Your address"><br><br>
+            Upload Image : <input type="file" name="photo"><br><br>
+            Select  Role : <select  id="dropbox" name="role">
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select> <br><br>
+
+            <button>Register</button><br><br>
+            Already User? <a href="../HTML/Index.html">Login here</a>
+        </form>
+
+    </center>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>&copy; 2023 www.rajendrasingharora.com. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body> 
+</html> 

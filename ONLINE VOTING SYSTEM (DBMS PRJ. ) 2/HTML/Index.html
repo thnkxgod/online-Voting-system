@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+
+    
+    
+
+</head>
+
+<body>
+    <style>
+        
+        body{
+            background-image: url('../Image/images\ \(15\).jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+    </style>
+    <div id="headerSection">
+        <center><h1>ONLINE VOTING SYSTEM</h1></center>
+        <hr>
+    </div>
+
+    <div id="bodySection">
+        <center>
+            <!-- form section --> 
+    
+            <h3>Login</h3>
+            <form action="../API/login.php" method="POST" >
+                <input type="text" name="mobile" placeholder="Enter your mobile number"><br><br>
+                <input type="password" name="password" placeholder="Enter your password"><br><br>
+                <select id="dropbox" name="role">
+
+                    <option value="0">SELECT</option>
+                    <option value="1">Voter</option>
+                    <option value="2">Group</option>
+                </select> <br><br>
+                <button id="loginBtn">Login </button><br><br>
+                New User? <a href="../Routes/register.html">Register here</a>
+            </form>  
+    
+        </center>
+    </div>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>&copy; 2023 www.rajendrasingharora.com. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+   
+
+
+</body> 
+</html> 
